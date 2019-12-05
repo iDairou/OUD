@@ -1,0 +1,55 @@
+.subpage-head {
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.6)), to(black)), url(/Specifications/images/specifications_background.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 20%, black), url(/Specifications/images/specifications_background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+}
+
+.specs {
+  background-image: url(/images/background_img_1.jpg);
+  background-position: left -15% bottom;
+  display: block;
+}
+
+.specs .container {
+  margin-bottom: 7rem;
+}
+
+.specs .forcolumns {
+  font-family: 'Lato';
+  width: 900px;
+  margin: auto;
+}
+
+.specs .forcolumns h4 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.specs .forcolumns p {
+  font-size: 16px;
+}
+
+.engine {
+  background-image: url(/images/background_img_2.jpg), url(/Gallery/images/Image3.jpg);
+  background-position: right bottom, left top;
+  display: block;
+}
+
+.engine ul {
+  list-style: none;
+  margin-bottom: 8rem;
+  opacity: 1;
+}
+
+.engine ul span {
+  color: #ea0d60;
+}
+
+.engine h2 {
+  margin-bottom: 20px;
+  opacity: 1;
+}
+/*# sourceMappingURL=specifications.css.map */

@@ -1,0 +1,68 @@
+.subpage-head {
+  width: 100%;
+  max-height: 100vh;
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/Gallery/images/background_header-gallery.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Gallery/images/background_header-gallery.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  padding: 90px 0 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Lato';
+}
+
+.specs a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ea0d60;
+  border: none;
+}
+
+.specs .row {
+  padding-top: 3rem;
+}
+
+.specs .row input {
+  width: 100%;
+  text-decoration: none;
+  margin-top: 2rem;
+  border: none;
+  border-bottom: 2px solid #888888;
+  outline: none;
+}
+
+.specs .row input:focus {
+  border-bottom: 2px solid #228fd8;
+}
+
+.specs .row textarea {
+  width: 100%;
+  text-decoration: none;
+  margin-top: 2rem;
+  border: none;
+  border-bottom: 2px solid #888888;
+  outline: none;
+}
+
+.specs .row textarea:focus {
+  border-bottom: 2px solid #228fd8;
+}
+/*# sourceMappingURL=call.css.map */

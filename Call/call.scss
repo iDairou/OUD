@@ -1,3 +1,11 @@
+$super-large: 1585px;
+$large: 1400px;
+$medium: 1100px;
+$small: 870px;
+$super-small: 630px;
+$mega-small: 540px;
+$hyper-small: 359px;
+
 .subpage-head {
     width: 100%;
     max-height: 100vh;
@@ -10,9 +18,30 @@
     padding: 90px 0 90px 0;
     display: flex;
     font-family: 'Lato';
+    .container{
+        h1{
+            @media screen and (max-width: $mega-small){
+                font-size: 50px;
+            }
+    
+        }
+    }
 }
 
-.specs{
+.calls{
+    .container{
+        @media screen and (max-width: $mega-small){
+            margin-bottom: 4rem;
+        }
+        h2{
+            @media screen and (max-width: $mega-small){
+                font-size: 40px;
+            }
+            @media screen and (max-width: $hyper-small){
+                font-size: 30px;
+            }
+    }
+}
     a{
         display: flex;
         width: 150px;
@@ -31,6 +60,7 @@
 
     .row{
         padding-top: 3rem;
+        
         input{
             width: 100%;
             text-decoration: none;
@@ -38,6 +68,7 @@
             border: none;
             border-bottom: 2px solid #888888;
             outline: none;
+            background: transparent;
         }
         input:focus{
           
@@ -50,6 +81,7 @@
             border: none;
             border-bottom: 2px solid #888888;
             outline: none;
+            background: transparent;
         }
         textarea:focus{
             border-bottom: 2px solid #228fd8;

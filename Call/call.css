@@ -14,7 +14,31 @@
   font-family: 'Lato';
 }
 
-.specs a {
+@media screen and (max-width: 540px) {
+  .subpage-head .container h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .calls .container {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .calls .container h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .calls .container h2 {
+    font-size: 30px;
+  }
+}
+
+.calls a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,33 +60,35 @@
   border: none;
 }
 
-.specs .row {
+.calls .row {
   padding-top: 3rem;
 }
 
-.specs .row input {
+.calls .row input {
   width: 100%;
   text-decoration: none;
   margin-top: 2rem;
   border: none;
   border-bottom: 2px solid #888888;
   outline: none;
+  background: transparent;
 }
 
-.specs .row input:focus {
+.calls .row input:focus {
   border-bottom: 2px solid #228fd8;
 }
 
-.specs .row textarea {
+.calls .row textarea {
   width: 100%;
   text-decoration: none;
   margin-top: 2rem;
   border: none;
   border-bottom: 2px solid #888888;
   outline: none;
+  background: transparent;
 }
 
-.specs .row textarea:focus {
+.calls .row textarea:focus {
   border-bottom: 2px solid #228fd8;
 }
 /*# sourceMappingURL=call.css.map */

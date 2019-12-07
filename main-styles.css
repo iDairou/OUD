@@ -1109,6 +1109,12 @@ footer .row .col {
   text-decoration: none;
 }
 
+@media screen and (max-width: 870px) {
+  footer .row .col {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 540px) {
   footer .row .col {
     padding-bottom: 30px;
@@ -1118,11 +1124,6 @@ footer .row .col {
 @media screen and (max-width: 359px) {
   footer .row .col {
     padding-bottom: 2px;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  footer .row .col {
     width: 50%;
   }
 }

@@ -7,20 +7,61 @@
   background-position: center bottom;
 }
 
+@media screen and (max-width: 359px) {
+  .subpage-head .container h1 {
+    font-size: 50px;
+  }
+}
+
 .specs {
   background-image: url(/images/background_img_1.jpg);
   background-position: left -15% bottom;
   display: block;
 }
 
+@media screen and (max-width: 1585px) {
+  .specs {
+    background-position: left bottom;
+  }
+}
+
 .specs .container {
   margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 540px) {
+  .specs .container {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .specs .container h2 {
+    font-size: 50px;
+  }
 }
 
 .specs .forcolumns {
   font-family: 'Lato';
   width: 900px;
   margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .specs .forcolumns {
+    width: 100%;
+  }
+}
+
+.specs .forcolumns .col-sm {
+  width: 33%;
+}
+
+@media screen and (max-width: 540px) {
+  .specs .forcolumns .col-sm {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 .specs .forcolumns h4 {
@@ -36,12 +77,25 @@
   background-image: url(/images/background_img_2.jpg), url(/Gallery/images/Image3.jpg);
   background-position: right bottom, left top;
   display: block;
+  min-height: 0;
+}
+
+@media screen and (max-width: 1585px) {
+  .engine {
+    background: none;
+  }
 }
 
 .engine ul {
   list-style: none;
   margin-bottom: 8rem;
   opacity: 1;
+}
+
+@media screen and (max-width: 540px) {
+  .engine ul {
+    margin-bottom: 3rem;
+  }
 }
 
 .engine ul span {
@@ -51,5 +105,11 @@
 .engine h2 {
   margin-bottom: 20px;
   opacity: 1;
+}
+
+@media screen and (max-width: 540px) {
+  .engine h2 {
+    font-size: 35px;
+  }
 }
 /*# sourceMappingURL=specifications.css.map */

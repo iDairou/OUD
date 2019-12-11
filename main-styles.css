@@ -201,7 +201,6 @@ header .hero-container a {
 @media screen and (max-width: 540px) {
   .overview .container {
     width: 300px;
-    margin-bottom: 0;
   }
 }
 
@@ -400,13 +399,8 @@ header .hero-container a {
 
 @media screen and (max-width: 630px) {
   .details .car-details-cont img {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont img {
-    width: 30%;
+    width: auto;
+    max-width: 80%;
   }
 }
 
@@ -423,7 +417,6 @@ header .hero-container a {
 
 .details .car-details-cont .car-side-text {
   position: relative;
-  max-width: 100%;
 }
 
 .details .car-details-cont .car-side-text .line {
@@ -447,13 +440,9 @@ header .hero-container a {
 
 @media screen and (max-width: 630px) {
   .details .car-details-cont .car-side-text .line {
-    width: 20px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .line {
-    width: 13px;
+    border: none;
+    z-index: 1;
+    position: absolute;
   }
 }
 
@@ -466,9 +455,39 @@ header .hero-container a {
   transition: all 0.5s;
 }
 
+@media screen and (max-width: 630px) {
+  .details .car-details-cont .car-side-text .line img {
+    -webkit-box-shadow: #740c1d 0 0 20px;
+            box-shadow: #740c1d 0 0 20px;
+    width: auto !important;
+    max-width: 6rem !important;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .details .car-details-cont .car-side-text .line img {
+    max-width: 4rem !important;
+  }
+}
+
 .details .car-details-cont .car-side-text .line img:hover {
   -webkit-box-shadow: #740c1d 0 0 100px;
           box-shadow: #740c1d 0 0 100px;
+}
+
+@media screen and (max-width: 630px) {
+  .details .car-details-cont .car-side-text .line img:hover {
+    -webkit-box-shadow: #740c1d 0 0 20px;
+            box-shadow: #740c1d 0 0 20px;
+    max-width: 7rem !important;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .details .car-details-cont .car-side-text .line img:hover {
+    max-width: 5rem !important;
+  }
 }
 
 .details .car-details-cont .car-side-text .left-top {
@@ -496,17 +515,10 @@ header .hero-container a {
 
 @media screen and (max-width: 630px) {
   .details .car-details-cont .car-side-text .left-top {
-    height: 20px;
-    right: 25rem;
-    bottom: 5.5rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .left-top {
-    height: 13px;
-    right: 310px;
-    bottom: 56px;
+    border: none;
+    position: absolute;
+    top: 33%;
+    left: 10%;
   }
 }
 
@@ -533,16 +545,9 @@ header .hero-container a {
 
 @media screen and (max-width: 630px) {
   .details .car-details-cont .car-side-text .left-top img {
-    right: 1.5rem;
-    top: -2.5rem;
-    width: 3rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .left-top img {
-    right: 1rem;
-    top: -2rem;
+    right: 0;
+    top: 0;
+    position: relative;
   }
 }
 
@@ -567,15 +572,15 @@ header .hero-container a {
 
 @media screen and (max-width: 630px) {
   .details .car-details-cont .car-side-text .left-bottom {
-    right: 25rem;
-    top: 6rem;
+    right: 84%;
+    top: 66%;
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 359px) {
   .details .car-details-cont .car-side-text .left-bottom {
-    right: 19.5rem;
-    top: 2.5rem;
+    right: 75%;
+    top: 64%;
   }
 }
 
@@ -600,61 +605,46 @@ header .hero-container a {
   }
 }
 
-@media screen and (max-width: 630px) {
-  .details .car-details-cont .car-side-text .left-bottom img {
-    width: 3rem;
-    top: 1.1rem;
-    right: 1.7rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .left-bottom img {
-    top: 1.5rem;
-    right: 1rem;
-  }
-}
-
-.details .car-details-cont .car-side-text .right-top {
+.details .car-details-cont .right-top {
   left: 32.5rem;
   bottom: 19rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .car-side-text .right-top {
+  .details .car-details-cont .right-top {
     left: 31.5rem;
     bottom: 16rem;
   }
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .car-side-text .right-top {
+  .details .car-details-cont .right-top {
     left: 28rem;
     bottom: 12.5rem;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .details .car-details-cont .car-side-text .right-top {
-    left: 24.7rem;
-    bottom: 8rem;
+  .details .car-details-cont .right-top {
+    left: 60%;
+    bottom: 87%;
   }
 }
 
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .right-top {
-    left: 19.2rem;
-    bottom: 5.2rem;
+@media screen and (max-width: 359px) {
+  .details .car-details-cont .right-top {
+    left: 61%;
+    bottom: 69%;
   }
 }
 
-.details .car-details-cont .car-side-text .right-top img {
+.details .car-details-cont .right-top img {
   left: 6.5rem;
   top: -2.5rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .car-side-text .right-top img {
+  .details .car-details-cont .right-top img {
     left: 4rem;
     top: -1rem;
     width: 7rem;
@@ -662,68 +652,46 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .car-side-text .right-top img {
+  .details .car-details-cont .right-top img {
     width: 5rem;
     left: 2.5rem;
     top: 0.5rem;
   }
 }
 
-@media screen and (max-width: 630px) {
-  .details .car-details-cont .car-side-text .right-top img {
-    width: 3rem;
-    left: 1.8rem;
-    top: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .right-top img {
-    left: 1.2rem;
-    top: 1.4rem;
-  }
-}
-
-.details .car-details-cont .car-side-text .right-bottom {
+.details .car-details-cont .right-bottom {
   left: 32.5rem;
   top: 15rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .car-side-text .right-bottom {
+  .details .car-details-cont .right-bottom {
     left: 32rem;
     top: 13rem;
   }
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .car-side-text .right-bottom {
+  .details .car-details-cont .right-bottom {
     left: 28.5rem;
     top: 9rem;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .details .car-details-cont .car-side-text .right-bottom {
-    left: 24.9rem;
-    top: 5rem;
+  .details .car-details-cont .right-bottom {
+    left: 60%;
+    top: 55%;
   }
 }
 
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .right-bottom {
-    left: 19.4rem;
-    top: 2.1rem;
-  }
-}
-
-.details .car-details-cont .car-side-text .right-bottom img {
+.details .car-details-cont .right-bottom img {
   left: 6.5rem;
   top: -2.5rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .car-side-text .right-bottom img {
+  .details .car-details-cont .right-bottom img {
     top: -1rem;
     left: 4rem;
     width: 7rem;
@@ -731,28 +699,14 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .car-side-text .right-bottom img {
+  .details .car-details-cont .right-bottom img {
     top: 0.5rem;
     left: 2.5rem;
     width: 5rem;
   }
 }
 
-@media screen and (max-width: 630px) {
-  .details .car-details-cont .car-side-text .right-bottom img {
-    top: 1.3rem;
-    left: 1.8rem;
-    width: 3rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .car-side-text .right-bottom img {
-    left: 1.1rem;
-  }
-}
-
-.details .car-details-cont .car-side-text h3 {
+.details .car-details-cont h3 {
   font-family: 'Montserrat';
   cursor: default;
   font-size: 100px;
@@ -764,7 +718,7 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .car-side-text h3 {
+  .details .car-details-cont h3 {
     font-size: 80px;
     left: 8.5rem;
     top: -4rem;
@@ -772,7 +726,7 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .car-side-text h3 {
+  .details .car-details-cont h3 {
     font-size: 62px;
     left: 10.7rem;
     top: -3rem;
@@ -780,75 +734,79 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 630px) {
-  .details .car-details-cont .car-side-text h3 {
+  .details .car-details-cont h3 {
     font-size: 43px;
-    left: 12.7rem;
-    top: -2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
-.details .car-details-cont .back h3 {
+.details .back h3 {
   left: 8rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .back h3 {
+  .details .back h3 {
     left: 10rem;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .back h3 {
+  .details .back h3 {
     left: 11.5rem;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .details .car-details-cont .back h3 {
-    left: 13.4rem;
+  .details .back h3 {
+    font-size: 43px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
-.details .car-details-cont .back .left {
+.details .back .left {
   left: -5rem;
   top: 20rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .back .left {
+  .details .back .left {
     left: 1rem;
     top: 15.5rem;
   }
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .back .left {
+  .details .back .left {
     left: 5.5rem;
     top: 11rem;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .details .car-details-cont .back .left {
-    left: 9.5rem;
-    top: 6.3rem;
+  .details .back .left {
+    left: 32%;
+    top: 54%;
   }
 }
 
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .back .left {
-    left: 9.6rem;
-    top: 2.9rem;
+@media screen and (max-width: 359px) {
+  .details .back .left {
+    top: 41%;
+    left: 41%;
   }
 }
 
-.details .car-details-cont .back .left img {
+.details .back .left img {
   left: -12rem;
   top: -2rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .back .left img {
+  .details .back .left img {
     width: 7rem;
     left: -7.5rem;
     top: -1rem;
@@ -856,67 +814,53 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .back .left img {
+  .details .back .left img {
     width: 5rem;
     left: -5.5rem;
     top: 0rem;
   }
 }
 
-@media screen and (max-width: 630px) {
-  .details .car-details-cont .back .left img {
-    width: 3rem;
-    left: -3.5rem;
-    top: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .back .left img {
-    left: -3.3rem;
-  }
-}
-
-.details .car-details-cont .back .right {
+.details .back .right {
   right: -4rem;
   top: 7.5rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .back .right {
+  .details .back .right {
     right: 1rem;
     top: 5.5rem;
   }
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .back .right {
+  .details .back .right {
     right: 5.7rem;
     top: 3.5rem;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .details .car-details-cont .back .right {
-    right: 9.5rem;
-    top: 1.5rem;
+  .details .back .right {
+    right: 35%;
+    top: 10%;
   }
 }
 
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .back .right {
-    right: 9.7rem;
-    top: -0.1rem;
+@media screen and (max-width: 359px) {
+  .details .back .right {
+    left: 52%;
+    top: 2%;
   }
 }
 
-.details .car-details-cont .back .right img {
+.details .back .right img {
   left: 6.5rem;
   bottom: -6rem;
 }
 
 @media screen and (max-width: 1100px) {
-  .details .car-details-cont .back .right img {
+  .details .back .right img {
     width: 7rem;
     left: 4rem;
     bottom: -3.5rem;
@@ -924,44 +868,30 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 870px) {
-  .details .car-details-cont .back .right img {
+  .details .back .right img {
     width: 5rem;
     left: 2.5rem;
     bottom: -2.5rem;
   }
 }
 
-@media screen and (max-width: 630px) {
-  .details .car-details-cont .back .right img {
-    width: 3rem;
-    left: 1.8rem;
-    bottom: -1.5rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .details .car-details-cont .back .right img {
-    left: 1.2rem;
-  }
-}
-
-.details .car-details-cont .back .full-spec {
+.details .back .full-spec {
   padding-top: 4rem;
 }
 
-.details .car-details-cont .back .full-spec h4 {
+.details .back .full-spec h4 {
   font-family: 'Lato';
   font-size: 16px;
   text-align: center;
 }
 
-.details .car-details-cont .back .full-spec h4 a {
+.details .back .full-spec h4 a {
   display: inline-block;
   color: #ea0d60;
   text-decoration: none;
 }
 
-.details .car-details-cont .back .full-spec h4 a::after {
+.details .back .full-spec h4 a::after {
   content: '';
   display: block;
   width: 0;
@@ -971,7 +901,7 @@ header .hero-container a {
   transition: width .3s;
 }
 
-.details .car-details-cont .back .full-spec h4 a:hover::after {
+.details .back .full-spec h4 a:hover::after {
   width: 100%;
 }
 
@@ -984,7 +914,6 @@ header .hero-container a {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left bottom, right;
-  min-height: 80vh;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1104,6 +1033,13 @@ footer .row {
   color: #fff;
 }
 
+@media screen and (max-width: 700px) {
+  footer .row {
+    display: block;
+    text-align: center;
+  }
+}
+
 footer .row .col {
   padding-bottom: 90px;
   text-decoration: none;
@@ -1115,16 +1051,11 @@ footer .row .col {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
   footer .row .col {
-    padding-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  footer .row .col {
-    padding-bottom: 2px;
-    width: 50%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 
@@ -1133,17 +1064,16 @@ footer .row .col h4 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
   footer .row .col h4 {
-    font-size: 20px;
+    font-size: 80px;
     margin-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 540px) {
   footer .row .col h4 {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 40px;
   }
 }
 
@@ -1151,29 +1081,35 @@ footer .row .col span {
   color: #ea0d60;
 }
 
-footer .row .col li {
+@media screen and (max-width: 700px) {
+  footer .row .col ul {
+    margin-right: 2rem;
+  }
+}
+
+footer .row .col ul li {
   list-style: none;
 }
 
-footer .row .col li a {
+footer .row .col ul li a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
 }
 
+@media screen and (max-width: 700px) {
+  footer .row .col ul li a {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 540px) {
-  footer .row .col li a {
-    font-size: 15px;
+  footer .row .col ul li a {
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 359px) {
-  footer .row .col li a {
-    font-size: 12px;
-  }
-}
-
-footer .row .col li a::after {
+footer .row .col ul li a::after {
   content: '';
   display: block;
   width: 0;
@@ -1183,45 +1119,73 @@ footer .row .col li a::after {
   transition: width .3s;
 }
 
-footer .row .col li a:hover::after {
+footer .row .col ul li a:hover::after {
   width: 100%;
 }
 
-footer .row .copyright {
-  width: 1170px;
+.copyright {
+  width: auto;
   color: #b5b5b5;
+  background: #000000;
+  margin: auto;
 }
 
-@media screen and (max-width: 540px) {
-  footer .row .copyright {
-    width: 320px;
+.copyright .row {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media screen and (max-width: 630px) {
+  .copyright .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
-footer .row .copyright .row {
-  width: 100%;
+@media screen and (max-width: 540px) {
+  .copyright .row {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }
 
-footer .row .copyright .row .col {
+.copyright .row .col {
   padding: 0;
 }
 
-footer .row .copyright .row .col p {
+@media screen and (max-width: 630px) {
+  .copyright .row .col {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+    width: 50%;
+  }
+}
+
+.copyright .row .col p {
   margin-left: 3rem;
 }
 
-footer .row .copyright ul {
+@media screen and (max-width: 540px) {
+  .copyright .row .col p {
+    margin-left: 0;
+    width: 50%;
+  }
+}
+
+.copyright ul {
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .row .copyright ul li {
+.copyright ul li {
   list-style: none;
 }
 
-footer .row .copyright ul li a {
+.copyright ul li a {
   margin-left: 20px;
 }
 /*# sourceMappingURL=main-styles.css.map */

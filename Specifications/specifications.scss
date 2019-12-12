@@ -27,6 +27,10 @@ $hyper-small: 359px;
     background-image: url(../images/background_img_1.jpg);
     background-position: left -15% bottom;
     display: block;
+    @media screen and (max-width: $super-large) {
+        background: none;
+   
+    }
     @media screen and (max-width: $super-large){
         background-position: left bottom;
     }

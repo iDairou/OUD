@@ -1,0 +1,107 @@
+$super-large: 1585px;
+$large: 1400px;
+$medium: 1100px;
+$small: 870px;
+$super-small: 630px;
+$mega-small: 540px;
+$hyper-small: 359px;
+
+.subpage-head {
+
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 20%, rgba(0,0,0,1)), url(../Specifications/images/specifications_background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+    .container{
+        h1{
+            @media screen and (max-width: $hyper-small){
+                font-size: 50px;
+            }
+    
+        }
+    }
+}
+
+.specs{
+    background-image: url(../images/background_img_1.jpg);
+    background-position: left -15% bottom;
+    display: block;
+    @media screen and (max-width: $super-large){
+        background-position: left bottom;
+    }
+    
+.container{
+    margin-bottom: 7rem;
+    @media screen and (max-width: $mega-small){
+        margin-bottom: 4rem;
+    }
+    h2{
+        @media screen and (max-width: $hyper-small){
+            font-size: 50px;
+        }
+
+    }
+
+
+}
+.forcolumns{
+    font-family: 'Lato';
+    width: 900px;
+    margin: auto;
+    @media screen and (max-width: $medium){
+        width: 100%;
+    }
+    
+    .col-sm{
+        width: 33%;
+        @media screen and (max-width: $mega-small){
+            width: 90%;
+            text-align: center;
+        }
+    }
+    h4{
+        font-size: 21px;
+        font-weight: bold;
+        
+           
+    
+    
+    }
+    p{
+        font-size: 16px;
+       
+    }
+
+}
+}
+.engine{
+    background-image: url(../images/background_img_2.jpg), url(../Gallery/images/Image3.jpg);
+    background-position: right bottom, left top;
+    display: block;
+    min-height: 0;
+    @media screen and (max-width: $super-large){
+        background: none;
+    }
+
+   
+    
+    ul{
+        list-style: none;
+        margin-bottom: 8rem;
+        opacity: 1;
+        @media screen and (max-width: $mega-small){
+            margin-bottom: 3rem;
+        }
+        span{
+            color: #ea0d60;
+        }
+    }
+    h2{
+        margin-bottom: 20px;
+        opacity: 1;
+        @media screen and (max-width: $mega-small){
+            font-size: 35px;
+        }
+    }
+}

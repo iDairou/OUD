@@ -9,7 +9,7 @@ $hyper-small: 359px;
 .subpage-head {
 
     background-color: black;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 20%, rgba(0,0,0,1)), url(../Specifications/images/specifications_background.jpg);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 20%, rgba(0,0,0,1)), url(/Specifications/images/specifications_background.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center bottom;
@@ -24,7 +24,7 @@ $hyper-small: 359px;
 }
 
 .specs{
-    background-image: url(../images/background_img_1.jpg);
+    background-image: url(/images/background_img_1.jpg);
     background-position: left -15% bottom;
     display: block;
     @media screen and (max-width: $super-large){
@@ -76,7 +76,7 @@ $hyper-small: 359px;
 }
 }
 .engine{
-    background-image: url(../images/background_img_2.jpg), url(../Gallery/images/Image3.jpg);
+    background-image: url(/images/background_img_2.jpg), url(/Gallery/images/Image3.jpg);
     background-position: right bottom, left top;
     display: block;
     min-height: 0;

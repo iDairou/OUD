@@ -3,7 +3,7 @@
     max-height: 100vh;
     background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)), url(../Gallery/images/background_header-gallery.jpg);
+            rgba(0, 0, 0, 0.7)), url(/Gallery/images/background_header-gallery.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right;
@@ -91,22 +91,22 @@
             }
 
             .a {
-                background-image: url(../Gallery/images/Image1.jpg);
+                background-image: url(/Gallery/images/Image1.jpg);
                 z-index: 1;
             }
 
             .b {
-                background-image: url(../Gallery/images/Image2.jpg);
+                background-image: url(/Gallery/images/Image2.jpg);
                 z-index: 1;
             }
 
             .c {
-                background-image: url(../Gallery/images/Image3.jpg);
+                background-image: url(/Gallery/images/Image3.jpg);
                 z-index: 1;
             }
 
             .d {
-                background-image: url(../Gallery/images/Image4.jpg);
+                background-image: url(/Gallery/images/Image4.jpg);
                 z-index: 1;
             }
             .col-6{
@@ -116,7 +116,7 @@
                 right: 0;
                 max-width: 50%;
                 height: 590px;
-                background-image: url(../Gallery/images/Image5.jpg);
+                background-image: url(/Gallery/images/Image5.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: left;

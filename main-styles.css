@@ -38,6 +38,13 @@ body {
   margin-left: 4rem;
 }
 
+@media screen and (max-width: 1100px) {
+  .navbar .navbar-nav .nav-link {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .navbar .navbar-nav .nav-link {
     font-size: 2rem;
@@ -69,6 +76,12 @@ body {
   background: -webkit-linear-gradient(whitesmoke, #494949);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar a {
+    font-size: 2rem;
+  }
 }
 
 header {
@@ -168,6 +181,9 @@ header .hero-container a {
 }
 
 @media screen and (max-width: 1585px) {
+  .overview {
+    background: none;
+  }
   .overview::after {
     content: '';
     position: absolute;

@@ -7,9 +7,21 @@
   background-position: center bottom;
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 870px) {
   .subpage-head .container h1 {
     font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .subpage-head .container h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .subpage-head .container h1 {
+    font-size: 30px;
   }
 }
 
@@ -56,6 +68,7 @@
 @media screen and (max-width: 1100px) {
   .specs .forcolumns {
     width: 100%;
+    margin: auto;
   }
 }
 
@@ -67,6 +80,7 @@
   .specs .forcolumns .col-sm {
     width: 90%;
     text-align: center;
+    margin: auto;
   }
 }
 

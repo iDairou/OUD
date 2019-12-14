@@ -1,3 +1,12 @@
+$super-large: 1585px;
+$large: 1400px;
+$medium: 1100px;
+$small: 870px;
+$super-small: 630px;
+$mega-small: 540px;
+$hyper-small: 359px;
+
+
 .subpage-head {
     width: 100%;
     max-height: 100vh;
@@ -18,6 +27,10 @@
         h1 {
             font-size: 84px;
             line-height: 5rem;
+        
+                @media screen and (max-width: $super-small){
+                    font-size: 50px;
+                }
 
             span {
                 font-weight: 100;
@@ -75,9 +88,14 @@
         width: 1300px;
         margin: auto;
         position: relative;
+        @media screen and (max-width: $small) {
+            width: 100%;
+            
+        }
 
         .row {
             position: relative;
+            padding: 20px;
             .col-3 {
                 width: 295px;
                 height: 295px;
@@ -86,6 +104,14 @@
                 background-position: right;
                 box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
                 transition: all 0.5s;
+                @media screen and (max-width: 1200px){
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                @media screen and (max-width: $super-small){
+                    flex: 0 0 100%;
+    max-width: 100%;
+                }
 
 
             }
@@ -120,6 +146,11 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: left;
+                @media screen and (max-width: 1200px){
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    position: relative;
+                }
             }
 
             .col-3:hover {
@@ -129,16 +160,21 @@
                 z-index: 15;
                 background-position: center;
                 opacity: 1;
-              
+                @media screen and (max-width: $super-small){
+                    transform: scale(1.05);
+                }
             }
         }
 
     }
 
     .text-images {
-        width: 575px;
+        width: 50%;
         margin: auto;
         color: black;
+        @media screen and (max-width: $medium){
+            width: 70%;
+        }
 
         h3 {
             font-size: 65px;

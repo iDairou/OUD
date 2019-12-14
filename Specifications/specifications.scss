@@ -15,8 +15,14 @@ $hyper-small: 359px;
     background-position: center bottom;
     .container{
         h1{
-            @media screen and (max-width: $hyper-small){
+            @media screen and (max-width: $small){
                 font-size: 50px;
+            }
+            @media screen and (max-width: $super-small){
+                font-size: 40px;
+            }
+            @media screen and (max-width: $mega-small){
+                font-size: 30px;
             }
     
         }
@@ -55,6 +61,7 @@ $hyper-small: 359px;
     margin: auto;
     @media screen and (max-width: $medium){
         width: 100%;
+        margin: auto;
     }
     
     .col-sm{
@@ -62,6 +69,7 @@ $hyper-small: 359px;
         @media screen and (max-width: $mega-small){
             width: 90%;
             text-align: center;
+            margin: auto;
         }
     }
     h4{

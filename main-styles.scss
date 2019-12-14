@@ -41,7 +41,10 @@ body {
         .nav-link {
             margin-right: 4rem;
             margin-left: 4rem;
-
+            @media screen and (max-width: $medium){
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
             @media screen and (max-width: $mega-small) {
                 font-size: 2rem;
             }
@@ -76,6 +79,9 @@ body {
         background: -webkit-linear-gradient(rgb(245, 245, 245), rgb(73, 73, 73));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media screen and (max-width: $large){
+            font-size: 2rem;
+        }
     }
 }
 
@@ -159,7 +165,7 @@ header {
     position: relative;
 
     @media screen and (max-width: $super-large) {
-
+        background: none;
         &::after{
             content: '';
             position: absolute;

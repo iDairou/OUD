@@ -171,6 +171,12 @@
   }
 }
 
+.images .container .row .col-6 a {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
 .images .container .row .col-3:hover {
   -webkit-box-shadow: unset;
           box-shadow: unset;

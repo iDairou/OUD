@@ -6,6 +6,20 @@ $super-small: 630px;
 $mega-small: 540px;
 $hyper-small: 359px;
 
+@mixin button(){
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ea0d60;
+    border: none;
+}
 
 
 
@@ -132,18 +146,7 @@ header {
         }
 
         a {
-            display: flex;
-            width: 150px;
-            height: 50px;
-            margin: auto;
-            font-size: 12px;
-            font-weight: bold;
-            font-family: 'Montserrat';
-            border-radius: 50px;
-            align-items: center;
-            justify-content: center;
-            background-color: #ea0d60;
-            border: none;
+        @include button()
         }
 
     }
@@ -275,18 +278,7 @@ header {
     }
 
     a {
-        display: flex;
-        width: 150px;
-        height: 50px;
-        margin: auto;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: 'Montserrat';
-        border-radius: 50px;
-        align-items: center;
-        justify-content: center;
-        background-color: #ea0d60;
-        border: none;
+   @include button()
     }
 }
 
